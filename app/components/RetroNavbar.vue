@@ -92,7 +92,8 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 .navbar-inner {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
+  padding-top: calc(1rem + env(safe-area-inset-top));
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -155,9 +156,9 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   display: none;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-bg);
   border-top: 2px solid var(--color-border);
-  background: rgba(13, 13, 26, 0.95);
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {
