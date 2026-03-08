@@ -83,6 +83,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   backdrop-filter: blur(6px);
   border-bottom: 3px solid var(--color-border);
   transition: border-color 0.3s;
+  padding-top: env(safe-area-inset-top);
 }
 .navbar.scrolled {
   border-bottom-color: var(--color-accent);
@@ -156,6 +157,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   border-top: 2px solid var(--color-border);
+  background: rgba(13, 13, 26, 0.95);
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {

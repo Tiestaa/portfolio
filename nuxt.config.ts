@@ -20,10 +20,10 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Portfolio – Francesco',
+      title: 'Portfolio – Francesco Testa',
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'description', content: 'Portfolio personale in stile 8-bit di Francesco.' },
       ],
       link: [
